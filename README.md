@@ -7,7 +7,7 @@ TodoList CRUD 과제로 만들었습니다
 
 
 <p> align="center">
-![Ionic-App](https://github.com/yunsungjoong/myApp/assets/96567925/b5c7bbb7-c866-484d-aa18-c04d3bb7047d)
+![Ionic-App](https://github.com/yunsungjoong/myApp/assets/96567925/b5c7bbb7-c866-484d-aa18-c04d3bb7047d.gif)
 </p>
 
 
