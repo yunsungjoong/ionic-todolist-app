@@ -7,10 +7,14 @@
 <ion-content>
   <ion-list>
     <ion-item>
-      <ion-input type="text" placeholder="제목"></ion-input>
+      <ion-input type="text" placeholder="제목"
+      [(ngModel)]="todo.title"
+      ></ion-input>
     </ion-item>
     <ion-item>
-      <ion-textarea rows="5" placeholder="내용을 입력해주세요"></ion-textarea>
+      <ion-textarea rows="5" placeholder="내용을 입력해주세요"
+      [(ngModel)]="todo.description"
+      ></ion-textarea>
     </ion-item>
     <ion-item>
       <ion-label>완료</ion-label>

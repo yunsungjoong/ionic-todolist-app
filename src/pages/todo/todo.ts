@@ -32,8 +32,8 @@ export class TodoPage implements OnInit {
   }
 
   ngOnInit(){
-    this.todo = this.getTodo(this.navParams.get('id'));
-    console.log(this.navParams.get('id'))
+    this.todo = this.getTodo(
+      this.navParams.get('id'));
   }
 
   getTodo(todoId){
