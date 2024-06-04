@@ -18,5 +18,8 @@
 - ionic v3.18.0
 - cordova v7.1.0
 
-(2) 시작
+(2) 환경세팅 
+- nvm install 8.9.1
+- npm install -g npm@5.5.1
+- npm i
 - ionic serve
