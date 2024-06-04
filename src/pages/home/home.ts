@@ -33,4 +33,8 @@ export class HomePage implements OnInit{
     this.navCtrl.push(TodoPage, { id: todoId});
   }
 
+  deleteTodo(todoId) {
+    this.todos = this.todos.filter(todo => todo.id !== todoId)
+  }
+
 }
