@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 import todos from '../../data/todos';
+import { TodoPage } from '../todo/todo';
 //todos.ts에 있는 todos 데이터를 import시킨다.
 
 
@@ -26,6 +27,10 @@ export class HomePage implements OnInit{
   ngOnInit(){
     this.todos = todos;
     //import해온 세개의 데이터를 바로 위에 클래스 위에 있는, todos에 넣는다.
+  }
+
+  openNewTodo(todoId) {
+    this.navCtrl.push(TodoPage, { id: todoId});
   }
 
 }

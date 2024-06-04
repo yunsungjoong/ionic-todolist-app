@@ -6,9 +6,11 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content >
   <ion-list>
-    <button ion-item *ngFor="let todo of todos">
+    <button ion-item 
+      *ngFor="let todo of todos" 
+      (click)="openNewTodo(todo.id)">
       <h2>{{todo.title}}</h2>
       <p>{{todo.description}}</p>
       <div item-end *ngIf="todo.complete"> 
