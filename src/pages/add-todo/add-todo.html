@@ -1,0 +1,32 @@
+<!--
+  Generated template for the AddTodoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>할 일 추가</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>제목</ion-label>
+      <ion-input type="text" [(ngModel)]="newTodo.title"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>내용</ion-label>
+      <ion-textarea [(ngModel)]="newTodo.description"></ion-textarea>
+    </ion-item>
+    <ion-item>
+      <ion-label>완료</ion-label>
+      <ion-checkbox [(ngModel)]="newTodo.complete"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button block (click)="addTodo()">추가</button>
+  </div>
+</ion-content>

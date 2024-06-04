@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 
 import todos from '../../data/todos';
 import { TodoPage } from '../todo/todo';
-//todos.ts에 있는 todos 데이터를 import시킨다.
+import { AddTodoPage } from '../add-todo/add-todo';
 
 
 @Component({
@@ -20,7 +20,7 @@ export class HomePage implements OnInit{
   }[];
   //위와 같은 배열은 객체나 인터페이스 선언해서 쓰는게 좋다. 여기서는 그냥 인라인에서 하자.
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public modalCtrl: ModalController) {
 
   }
 
@@ -37,4 +37,19 @@ export class HomePage implements OnInit{
     this.todos = this.todos.filter(todo => todo.id !== todoId)
   }
 
+  openAddTodoModal() {
+    let addTodoModal = this.modalCtrl.create(AddTodoPage);
+    addTodoModal.onDidDismiss(newTodo => {
+      if (newTodo) {
+        // 새로운 할 일을 추가한다.
+        this.todos.push({
+          id: this.todos.length + 1,
+          title: newTodo.title,
+          description: newTodo.description,
+          complete: newTodo.complete
+        });
+      }
+    });
+    addTodoModal.present();
+  }
 }
