@@ -5,9 +5,8 @@
 Ionic 크로스 플랫폼으로 
 TodoList CRUD 과제로 만들었습니다
 
-
 <p align="center">
-![Ionic-App](https://github.com/yunsungjoong/myApp/assets/96567925/b5c7bbb7-c866-484d-aa18-c04d3bb7047d.gif)
+![Ionic-App_gif](https://github.com/yunsungjoong/myApp/assets/96567925/01b0850a-6e0e-41a8-b9f6-6eccd211fc1f)
 </p>
 
 
