@@ -18,7 +18,13 @@
     </ion-item>
     <ion-item>
       <ion-label>완료</ion-label>
-      <ion-checkbox></ion-checkbox>
+      <ion-checkbox
+        [(ngModel)]="todo.complete">
+      </ion-checkbox>
     </ion-item>
   </ion-list>
+
+  <div padding>
+    <button ion-button block (click)="updateTodo()">저장</button>
+  </div>
 </ion-content>
