@@ -1,14 +1,19 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      할 일 목록
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v3">docs</a> will be your guide.
-  </p>
+  <ion-list>
+    <button ion-item *ngFor="let todo of todos">
+      <h2>{{todo.title}}</h2>
+      <p>{{todo.description}}</p>
+      <div item-end *ngIf="todo.complete"> 
+        <ion-icon name="checkbox-outline"></ion-icon>
+      </div>
+    </button>
+  </ion-list>
 </ion-content>
