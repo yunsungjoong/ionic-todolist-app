@@ -18,7 +18,5 @@
 - ionic v3.18.0
 - cordova v7.1.0
 
-(2) 
-
-
-## 결과
+(2) 시작
+- ionic serve
