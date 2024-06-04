@@ -2,10 +2,9 @@
 
 # Ionic angular TodoList 
 <br />
-<b>Ionic 크로스 플랫폼으로 </b
+<b>Ionic 크로스 플랫폼으로 </b>
 <p>TodoList CRUD 과제로 만들었습니다</p>
-
-<br /><br />
+<br />
 
 ## 결과화면 
 
