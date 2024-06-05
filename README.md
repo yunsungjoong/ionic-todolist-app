@@ -5,7 +5,8 @@
 <b>Ionic 크로스 플랫폼으로 </b>
 <p>TodoList(CRUD) 만들었습니다</p>
 
-## 결과화면 
+
+## 결과화면 ( View : Ipone 12 Pro )
 ![Ionic-App-gif](https://github.com/yunsungjoong/myApp/assets/96567925/d6f2a34a-0491-49d0-a769-f55f9f0a98f5)
 
 ## 시작 가이드
