@@ -20,4 +20,8 @@ export class AddTodoPage {
     this.viewCtrl.dismiss(this.newTodo);
   }
 
+  cancel() {
+    this.viewCtrl.dismiss();
+  }
+
 }
